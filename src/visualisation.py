@@ -85,15 +85,17 @@ def lisa_map(gdf: gpd.GeoDataFrame) -> folium.Map:
 
     legend_html = """
     <div style="position:fixed;bottom:30px;left:30px;z-index:1000;
-         background:white;padding:10px;border-radius:6px;
-         border:1px solid #ccc;font-size:12px;line-height:1.8;">
-    <b>LISA Cluster Type</b><br>
+         background:white;padding:12px;border-radius:6px;
+         border:1px solid #ccc;font-size:12px;line-height:2;">
+    <b style="color:#000000;">LISA Cluster Type</b><br>
     """
     for code, color in LISA_COLORS.items():
+        label = LISA_LABELS[code]
         legend_html += (
             f'<span style="background:{color};display:inline-block;'
             f'width:14px;height:14px;margin-right:6px;'
-            f'border:1px solid #999;"></span>{LISA_LABELS[code]}<br>'
+            f'border:1px solid #999;vertical-align:middle;"></span>'
+            f'<span style="color:#000000;">{label}</span><br>'
         )
     legend_html += "</div>"
     m.get_root().html.add_child(folium.Element(legend_html))
