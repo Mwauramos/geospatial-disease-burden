@@ -6,6 +6,9 @@ An interactive geospatial dashboard mapping disease burden across all 47 Kenya c
 
 ---
 
+## Live Demo
+https://geospatial-disease-burden-38x4qkos76gggyzhwza4zc.streamlit.app
+
 ## Problem Statement
 
 Disease burden in Kenya is not randomly distributed. Malaria clusters around Lake Victoria and the coast; cholera follows arid-region water insecurity; dengue is coastal. Public health planners need tools that reveal these spatial patterns, identify hotspot counties, and quantify the strength of geographic clustering so resources can be allocated where they matter most.
