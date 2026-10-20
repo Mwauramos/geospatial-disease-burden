@@ -32,7 +32,6 @@ gdf_lisa = results["gdf_lisa"]
 global_df = results["global_df"]
 
 st.title("🗺️ Kenya Geospatial Disease Burden Dashboard")
-st.caption("ZENIK.AI | Computational Epidemiology Portfolio | Project 5")
 
 st.sidebar.header("Controls")
 disease_options = {
