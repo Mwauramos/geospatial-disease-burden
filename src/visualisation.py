@@ -32,7 +32,7 @@ def choropleth_map(gdf: gpd.GeoDataFrame, column: str,
     center = [0.0236, 37.9062]
 
     m = folium.Map(location=center, zoom_start=6,
-                   tiles="CartoDB positron")
+                   tiles="OpenStreetMap")
     Fullscreen().add_to(m)
 
     values = gdf[column].fillna(0)
@@ -63,7 +63,7 @@ def lisa_map(gdf: gpd.GeoDataFrame) -> folium.Map:
     center = [0.0236, 37.9062]
 
     m = folium.Map(location=center, zoom_start=6,
-                   tiles="CartoDB positron")
+                   tiles="OpenStreetMap")
     Fullscreen().add_to(m)
 
     for _, row in gdf.iterrows():
