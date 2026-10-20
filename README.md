@@ -54,14 +54,17 @@ Top N counties by any selected indicator, with a slider to adjust N from 5 to 47
 ---
 
 ## Project Structure
+
+```
 geospatial-disease-burden/
 ├── app.py
 ├── requirements.txt
 ├── data/
-├── src/
-│ ├── data_prep.py
-│ ├── spatial_analysis.py
-│ └── visualisation.py
+└── src/
+    ├── data_prep.py
+    ├── spatial_analysis.py
+    └── visualisation.py
+```
 
 
 ---
