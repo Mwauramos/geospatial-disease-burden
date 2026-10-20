@@ -1,7 +1,5 @@
 # Geospatial Disease Burden Dashboard
 
-**ZENIK.AI | Computational Epidemiology**
-
 An interactive geospatial dashboard mapping disease burden across all 47 Kenya counties using real administrative shapefiles, spatial autocorrelation statistics, and LISA cluster detection.
 
 ---
